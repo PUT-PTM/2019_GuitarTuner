@@ -9,7 +9,7 @@ Project is made up of source code and guitar preamplifier scheme. Microcontrolle
 * [STM32 Standard Peripheral Libraries](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html)
 * [HD44780 for STM32Fxxx](http://stm32f4-discovery.net/2015/07/hal-library-15-hd44780-for-stm32fxxx/)
 
-Projects realization requires building easy guitar preamplifier:
+Projects realization requires building simple guitar preamplifier:
 ![Preamplifier schema](asset/image/preamplifierSchema.png "Preamplifier schema")
 
 
@@ -38,6 +38,15 @@ Preamplifier should be built on a prototype board or solder on special tile.
 
 ## 5. How to run
 Connect LCD display and preamplifier following instructions:
+
+* connect **preamplifier output** to STM32 **PA0 pin**
+* connect **LCD RS pin** to STM32 **PC14 pin**
+* connect **LCD E pin** to STM32 **PA1 pin**
+* connect **LCD D4 pin** to STM32 **PB8 pin**
+* connect **LCD D5 pin** to STM32 **PB6 pin**
+* connect **LCD D6 pin** to STM32 **PB4 pin**
+* connect **LCD D7 pin** to STM32 **PD7 pin**
+
 Then, using dedicated IDE, build and install software into microcontroller. After enabling preamplifier and microcontroller tuner will start running.
 
 ## 6. License
@@ -49,4 +58,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 The project was conducted during the Microprocessor Lab course held by the Institute of Control and Information Engineering, Poznan University of Technology.
 Supervisor: [Tomasz Mańkowski](https://github.com/Tomasz-Mankowski)
-
